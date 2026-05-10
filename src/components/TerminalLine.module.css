@@ -1,0 +1,28 @@
+.line { animation: slide-up 0.15s ease both; padding: 0 4px; border-radius: 2px; }
+.pre  { font-family: var(--font-mono); font-size: 13px; white-space: pre-wrap; word-break: break-all; line-height: 1.65; }
+.blank { height: 8px; }
+
+.inputLine {
+  display: flex; align-items: center; padding: 2px 4px;
+  animation: slide-up 0.1s ease both; font-size: 13px; margin-top: 6px;
+}
+.promptGhost  { color: #00ff9f; font-weight: 700; }
+.promptAt     { color: #4a4a6a; }
+.promptHost   { color: #00d4ff; font-weight: 500; }
+.promptColon  { color: #4a4a6a; }
+.promptPath   { color: #ffb800; }
+.promptDollar { color: #4a4a6a; margin: 0 6px 0 2px; }
+.inputText    { color: #e8e8f0; }
+
+.ascii {
+  color: #00ff9f; font-family: var(--font-mono);
+  font-size: 11px; line-height: 1.2; opacity: 0.85;
+  letter-spacing: -0.5px; animation: slide-up 0.2s ease both;
+}
+
+.line-output  .pre { color: #c8c8d8; }
+.line-error   .pre { color: #ff4757; }
+.line-warn    .pre { color: #ffb800; }
+.line-success .pre { color: #00ff9f; }
+.line-info    .pre { color: #00d4ff; }
+.line-muted   .pre { color: #4a4a6a; }
