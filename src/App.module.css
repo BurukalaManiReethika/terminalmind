@@ -1,0 +1,11 @@
+.app  { display: flex; flex-direction: column; height: 100vh; width: 100vw; background: var(--bg-deep); overflow: hidden; }
+.main { display: flex; flex: 1; overflow: hidden; border-left: 1px solid var(--border); border-right: 1px solid var(--border); margin: 0 16px; animation: pulse-border 6s ease-in-out infinite; }
+
+.gutter { width: 36px; display: flex; flex-direction: column; align-items: center; padding: 16px 0; gap: 12px; background: var(--bg-panel); border-right: 1px solid var(--border); flex-shrink: 0; }
+.gutter:last-child { border-right: none; border-left: 1px solid var(--border); }
+.gutterLine  { flex: 1; width: 1px; background: linear-gradient(to bottom, transparent, var(--border), transparent); }
+.gutterLabel { font-family: var(--font-display); font-size: 7px; letter-spacing: 2px; color: var(--muted); writing-mode: vertical-rl; transform: rotate(180deg); }
+
+.footer { height: 32px; background: var(--bg-panel); border-top: 1px solid var(--border); display: flex; align-items: center; padding: 0 20px; gap: 24px; flex-shrink: 0; }
+.footer span { font-size: 10px; color: var(--muted); letter-spacing: 0.5px; }
+.footerRight { margin-left: auto; color: var(--green-dim) !important; font-family: var(--font-display); font-size: 9px !important; letter-spacing: 1px !important; }
